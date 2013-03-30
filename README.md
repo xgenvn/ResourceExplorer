@@ -12,21 +12,27 @@
 The repository is on http://github.com/xgenvn/ResourceExplorer.
 
 To use this component under your modx setup for further development:
+
 - In ./config.core.php file, change MODX_CORE_PATH to your setup path
 
 - Create two options under System Settings: dev_path and dev_url, point them to where ResourceExplorer is located at.
+
 ----Example: dev_path = {base_path}/x_components/
              dev_url  = {base_url}/x_components/
 
 - Create necessary namespace: resource_explorer
---core_path: {base_path}/x_components/ResourceExplorer/core/components/resource_explorer/
---assets_path: {base_path}/x_components/ResourceExplorer/assets/components/resource_explorer/
+
+----core_path: {base_path}/x_components/ResourceExplorer/core/components/resource_explorer/
+
+----assets_path: {base_path}/x_components/ResourceExplorer/assets/components/resource_explorer/
 
 I assumed that {base_url}/x_components/ can be accessed through your local web server.
 
 - Create necessary controller and menu item.
---Go to Systems>Actions: Add 'index' action under Actions>resource_explorer
---Place an Action under Components Menu. The controller has to be 'resource_explorer - index'
+
+----Go to Systems>Actions: Add 'index' action under Actions>resource_explorer
+
+----Place an Action under Components Menu. The controller has to be 'resource_explorer - index'
 
 - Now you can make your own changes. Run _build/build.transport.php on your browser to package things up.
 
