@@ -1,0 +1,21 @@
+.container_resource div{
+    font-weight:bold;text-transform:uppercase;
+    padding-left:24px;
+    background: url(../images/folder.png) no-repeat 0 12px;
+}
+.normal_resource div{
+    padding-left:24px;
+    background: url(../images/page_white.png) no-repeat 0 12px;
+}
+.unpublished_resource div{
+    font-style: italic;
+    color: grey;
+    padding-left: 24px;
+    background: url(../images/page_white.png) no-repeat 0 12px;
+}
+.deleted_resource div{
+    text-decoration: line-through;
+    color: red;
+    padding-left: 24px;
+    background: url(../images/page_white.png) no-repeat 0 12px;
+}
