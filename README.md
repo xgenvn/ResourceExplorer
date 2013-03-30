@@ -20,13 +20,13 @@ To use this component under your modx setup for further development:
 - Create two options under System Settings: dev_path and dev_url, point them to where ResourceExplorer is located at.
 
 > Example: dev_path = {base_path}/x_components/
-
+>
 >          dev_url  = {base_url}/x_components/
 
 - Create necessary namespace: resource_explorer
 
 > core_path:   {base_path}/x_components/ResourceExplorer/core/components/resource_explorer/
-
+>
 > assets_path: {base_path}/x_components/ResourceExplorer/assets/components/resource_explorer/
 
 I assumed that {base_url}/x_components/ can be accessed through your local web server.
