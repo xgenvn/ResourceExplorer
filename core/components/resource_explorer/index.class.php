@@ -16,7 +16,7 @@ abstract class ExplorerManagerController extends modExtraManagerController {
         return parent::initialize();
     }
     public function getLanguageTopics() {
-        return array('resource_explorer:default');
+        return array('explorer:default');
     }
     public function checkPermissions() { return true;}
 }

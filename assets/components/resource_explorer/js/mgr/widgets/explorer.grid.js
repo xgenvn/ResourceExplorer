@@ -1,7 +1,7 @@
 Explorer.grid.Explorer = function (config) {
     config = config || {};
     Ext.applyIf(config, {
-        id: 'explorer-grid-explorer', url: Explorer.config.connectorUrl, baseParams: { action: 'mgr/resource/getList' }, save_action: 'mgr/resource/updateFromGrid', fields: [
+        id: 'explorer-grid-explorer', url: Explorer.config.connectorUrl, baseParams: { action: 'mgr/resource/getlist' }, save_action: 'mgr/resource/updatefromgrid', fields: [
             {name: 'id', type: 'int'},
             {name: 'parent', type: 'int'},
             {name: 'pagetitle', type: 'string'},
@@ -43,7 +43,7 @@ Explorer.grid.Explorer = function (config) {
                     autoLoad: true,
                     root: 'results',
                     totalProperty: 'total',
-                    fields: ['key'], url: Explorer.config.connectorUrl, baseParams: { action: 'mgr/resource/getContextList' }
+                    fields: ['key'], url: Explorer.config.connectorUrl, baseParams: { action: 'mgr/resource/getcontextlist' }
                 }),
                 listeners: { 'change': { fn: function (cmp, newValue, oldValue) {
                     var grid = Ext.getCmp('explorer-grid-explorer');
@@ -279,6 +279,7 @@ Ext.extend(Explorer.grid.Explorer, MODx.grid.Grid, {
         this.exploreHome();
     }
 });
+
 Ext.reg('explorer-grid-explorer', Explorer.grid.Explorer);
 
 /*
@@ -325,3 +326,4 @@ Ext.reg('explorer-grid-explorer', Explorer.grid.Explorer);
 //};
 //Ext.extend(Explorer.window.UpdateResource, MODx.Window);
 //Ext.reg('explorer-window-resource-update', Explorer.window.UpdateResource);
+
