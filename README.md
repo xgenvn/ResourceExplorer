@@ -1,4 +1,4 @@
-##FOR USERS
+## FOR USERS
 
 *Resource Explorer* is a little component to help you achieve following purposes:
 
@@ -7,7 +7,7 @@
 - Can be used to replace the resource menu, only for content, not Template/Snippet/Chunk/TV management.
 
 
-##FOR DEVELOPERS
+## FOR DEVELOPERS
 
 *Resource Explorer* can be used as an example of custom manager page. You can add other sections to fit your needs.
 
